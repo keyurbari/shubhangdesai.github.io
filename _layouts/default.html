@@ -24,14 +24,20 @@
 	<body>
 
 		<div class="main section">
-			HI, I'M <br> <span class="name">SHUBHANG</span>
+			<div class="main-pic">
+				<!-- HI, I'M <br> <span class="name">SHUBHANG</span> -->
+			</div>
+			<div class="slant"></div>
+			<div class="main-text">
+				HI, I'M <br> <span class="name">SHUBHANG</span>
+			</div>
 		</div>
 		<div class="section about">
 			<h1>ABOUT</h1>
 			<p>
 				I'm a sophomore studying Computer Science at Stanford University. I am obsessed with Machine Learning
 				and am involved in AI initiatives such as the Stanford AI Lab. I am interested in CS education and have
-				spearheaded many education initiatives, such as organizing workshops during my membership in BASES and leading
+				headed many education initiatives, such as organizing workshops during my membership in BASES and leading
 				the creation of an AI elective series through CS + Social Good. I am fascinated with Philosophy and enjoy
 				reading metaphysics papers when I have some time. I can often be found working on code projects or
 				bingeing House of Cards, FRIENDS, or How I Met Your Mother in my free time.
@@ -43,46 +49,52 @@
 
 		<div class="black section">
 			<h1>PROJECTS</h1>
-
 			<div class="projects">
+
+			<div class="proj" id="ans">
+				<div style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/paper.png');"></div>
+				<span>Arbitrary Neural Style</span>
+			</div>
+
+			<div class="proj" id="comm">
+				<div style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/comm.png');"></div>
+				<span>The Commuter Chicago</span>
+			</div>
+
+			<div class="proj" id="enc">
+				<div style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/enc.png');"></div>
+				<span>RNN Encoder-Decoder for Machine Translation</span>
+			</div>
+
+			<div class="proj" id="dv8">
+				<div style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/dv8.jpg');"></div>
+				<span>dv8</span>
+			</div>
+
+			<div class="proj" id="iron">
+				<div style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/iron.png');"></div>
+				<span>Iron Drive</span>
+			</div>
+
+			<div class="proj" id="nibbly">
+				<div style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/nibbly.png');"></div>
+				<span>Nibbly</span>
+			</div>
+
+
 				<div class="proj" id="site">
 					<div style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/site.png');"></div>
 					<span>shubhangdesai.github.io</span>
 				</div>
 
 				<div class="proj" id="sta">
-					<div></div>
+					<div style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/sta.png');"></div>
 					<span>Style Transfer App</span>
 				</div>
 
-				<div class="proj" id="ans">
-					<div></div>
-					<span>Arbitrary Neural Style</span>
-				</div>
-
-				<div class="proj" id="nibbly">
-					<div></div>
-					<span>Nibbly</span>
-				</div>
-
-				<div class="proj" id="dv8">
-					<div></div>
-					<span>dv8</span>
-				</div>
-
-				<div class="proj" id="enc">
-					<div></div>
-					<span>RNN Encoder-Decoder for Machine Translation</span>
-				</div>
-
 				<div class="proj" id="concepts">
-					<div></div>
+					<div style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/concepts.png');"></div>
 					<span>Concepts iOS</span>
-				</div>
-
-				<div class="proj" id="iron">
-					<div></div>
-					<span>Iron Drive</span>
 				</div>
 
 				<div class="proj" id="bnm">
@@ -90,10 +102,6 @@
 					<span>BN Mentors</span>
 				</div>
 
-				<div class="proj" id="comm">
-					<div></div>
-					<span>The Commuter Chicago</span>
-				</div>
 			</div>
 		</div>
 
@@ -114,7 +122,7 @@
 						<p>
 							This summer, I am interning at Nasdaq as a part of the Machine Learning team. The team has undertaken two projects,
 							both of which I'm involved in. The first is using customer data to predict attrition, for which I prepared the learning target
-							set and assisted in developing a Random Forests algorithm for prediction. The second is using trade history data to
+							set and assisted in developing a Recurrent Neural Network for prediction. The second is using trade history data to
 							predict Nasdaq network latency. I am spearheading this initiative and have designed the overall architecture of the
 							neural network that we will be developing. We will soon begin development of the network itself, and I will be heavily
 							involved in its development and training.
@@ -125,7 +133,7 @@
 
 			<div class="exp-item">
 				<div class="exp-item left">
-					<img src="images/ideo_logo.jpeg" style="height: 220px"/>
+					<img src="images/ideo_logo.png" style="height: 220px"/>
 				</div>
 				<div class="exp-item right">
 					<div class="point">
@@ -138,7 +146,7 @@
 							I spent two weeks in January at the IDEO CoLab, the innovation arm of IDEO. I was on a small team which reasearched
 							the applications of Blockchain in society. We were specifically interested in using the trust established
 							from the Blockchain to create decentralized resource-sharing initiatives. I was the "tech person" on the team,
-							providing insight on technical feasibility and spearheading prototype development. We went through three design sprints,
+							providing insight on technical feasibility and leading prototype development. We went through three design sprints,
 							rapidly iterating by creating prototypes and gathering feedback. Our final three high-fidelity deliverables were
 							handed off to IDEO.
 						</p>
@@ -148,7 +156,7 @@
 
 			<div class="exp-item">
 				<div class="exp-item left">
-					<img src="images/state_farm_logo.jpg" style="height: 100px"/>
+					<img src="images/state_farm_logo.png" style="height: 75px"/>
 				</div>
 				<div class="exp-item right">
 					<div class="point">
@@ -196,7 +204,7 @@
 					</div>
 					<div class="content">
 							<h2>End-to-End Learning of One Objective Function to Represent Multiple Styles for Neural Style Transfer</h2>
-							<span>Stanford CS231n Website</span>
+							<span>Stanford CS231n</span>
 						<p>
 							Final paper for "Convolutional Neural Networks" class project, a cutting-edge research project on neural style transfer
 						</p>

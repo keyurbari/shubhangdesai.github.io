@@ -1,5 +1,6 @@
 html {
   height: 100%;
+  background: #fdfdfd;
 }
 
 body {
@@ -51,7 +52,7 @@ body {
   font-family: 'Oswald';
   font-weight: 400;
   margin: 0px;
-  color: white;
+  color: #fdfdfd;
   font-size: 50px;
   height: 300px;
   margin-right: 30px;
@@ -62,7 +63,7 @@ body {
 }
 
 .overlay-content p {
-  background: white;
+  background: #fdfdfd;
   line-height: 2;
   font-size: 20px;
   text-align: justify;
@@ -79,7 +80,7 @@ body {
   align-items: center;
   justify-content: center;
   margin-bottom: 60px;
-  background: white;
+  background: #fdfdfd;
   width: 75%;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -96,7 +97,7 @@ body {
   flex-direction: column;
   align-items: center;
 
-  background: white;
+  background: #fdfdfd;
 
   width: 100%;
 }
@@ -124,9 +125,14 @@ body {
 }
 
 .main {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-pic {
   height: 600px;
 
-  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('images/banner.jpg');
+  background: url('images/banner6.jpg');
   background-size: cover;
   background-position: center;
 
@@ -134,13 +140,43 @@ body {
   align-items: center;
   justify-content: center;
 
+  width: 60%;
+
   font-family: 'Oswald';
   font-size: 60px;
+  z-index: 1;
+}
+
+.slant {
+  width: 10%;
+  height: 600px;
+  background: linear-gradient(to bottom right, transparent 50%, #141414 50%);
+  margin-left: -10%;
+  z-index: 2;
+}
+
+.main-text {
+  height: 600px;
+
+  background: #141414;
+  color: #fdfdfd;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 45%;
+  margin-left: -5%;
+
+  font-family: 'Oswald';
+  font-size: 60px;
+  z-index: 0;
 }
 
 .name {
-  color: white;
-  background: black;
+  color: #141414;
+  background: #fdfdfd;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -163,7 +199,7 @@ body {
 
   margin-bottom: 40px;
 
-  background: white;
+  background: #fdfdfd;
 
   display: flex;
   justify-content: center;
@@ -193,7 +229,7 @@ body {
   font-size: 23px;
   font-weight: 200;
   text-align: center;
-  color: white;
+  color: #fdfdfd;
   padding-top: 43%;
 }
 
@@ -231,7 +267,7 @@ body {
 }
 
 .exp-item:hover > .right > .point > .circle {
-  background: black;
+  background:#141414;
 }
 
 .exp-item .point {
@@ -272,21 +308,21 @@ body {
   width: 15px;
   height: 15px;
   z-index: 2;
-  background: white;
+  background: #fdfdfd;
 
   transition: all 0.3s;
 }
 
 .black {
-  background: #111111;
-  color: white;
+  background: #141414;
+  color: #fdfdfd;
 }
 
 .pub {
   display: flex;
   flex-direction: row;
 
-  background: white;
+  background: #fdfdfd;
   width: 100%;
   border-radius: 5px;
 
@@ -297,7 +333,7 @@ body {
   display: block;
   width: 50%;
   text-decoration: none;
-  color: black;
+  color:#141414;
 }
 
 .pub .image-container {
@@ -330,7 +366,7 @@ body {
   font-size: 22px;
   margin-bottom: 2px;
 
-  background: linear-gradient(to right, black 50%, white 50%);
+  background: linear-gradient(to right,#141414 50%, #fdfdfd 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition:all 0.3s ease;
@@ -359,13 +395,13 @@ body {
   display: flex;
   flex-direction: column;
 
-  background: white;
+  background: #fdfdfd;
   width: 50%;
 
   margin-bottom: -1px;
 
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid#141414;
+  border-bottom: 1px solid#141414;
 }
 
 .post .img-container {
@@ -402,11 +438,11 @@ body {
 
 .sweep {
   text-decoration: none;
-  color: black;
+  color:#141414;
   padding: 5px 5px 0px 5px;
-  border-bottom: 1px black solid;
+  border-bottom: 1px#141414 solid;
 
-  background: linear-gradient(to right, black 50%, white 50%);
+  background: linear-gradient(to right,#141414 50%, #fdfdfd 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition:all 0.3s ease;
@@ -414,7 +450,7 @@ body {
 
 .sweep:hover {
    background-position:left bottom;
-   color: white;
+   color: #fdfdfd;
 }
 
 .blog-button {
@@ -425,9 +461,9 @@ body {
 
 .button {
   transition: 0.3s;
-  background: black;
-  color: white;
-  border: 1px solid black;
+  background:#141414;
+  color: #fdfdfd;
+  border: 1px solid#141414;
   border-radius: 5px;
 
   text-decoration: none;
@@ -443,8 +479,8 @@ body {
 
 .button:hover {
   transition: 0.3s;
-  background: white;
-  color: black;
+  background: #fdfdfd;
+  color:#141414;
 }
 
 .footer {
@@ -475,14 +511,14 @@ body {
   position: fixed;
   width: 25%;
   height: 100%;
-  background: black;
+  background:#141414;
 
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 
-  color: white;
+  color: #fdfdfd;
 }
 
 .sidebar .image {
@@ -493,7 +529,7 @@ body {
   background-size: cover;
   background-position: center;
   border-radius: 60%;
-  border: 2px solid white;
+  border: 2px solid #fdfdfd;
 }
 
 .sidebar h1 {
