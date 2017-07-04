@@ -16,6 +16,7 @@
 				<p id="project-desc">
 				</p>
 				<div class="row">
+					<a href="http://google.com" id="play" target="_blank"><img src="images/play.png"/></a>
 					<a href="http://google.com" id="github" target="_blank"><img src="images/github.png"/></a>
 					<a href="http://google.com" id="web" target="_blank"><img src="images/web.png"/></a>
 				</div>
@@ -24,9 +25,7 @@
 	<body>
 
 		<div class="main section">
-			<div class="main-pic">
-				<!-- HI, I'M <br> <span class="name">SHUBHANG</span> -->
-			</div>
+			<div class="main-pic"></div>
 			<div class="slant"></div>
 			<div class="main-text">
 				HI, I'M <br> <span class="name">SHUBHANG</span>
@@ -97,10 +96,10 @@
 					<span>Concepts iOS</span>
 				</div>
 
-				<div class="proj" id="bnm">
+				<!-- <div class="proj" id="bnm">
 					<div></div>
 					<span>BN Mentors</span>
-				</div>
+				</div> -->
 
 			</div>
 		</div>
@@ -229,6 +228,7 @@
 			<div class="links">
 				<a href="https://github.com/ShubhangDesai/" target="_blank"><img src="images/github-footer.png"/></a>
 				<a href="https://www.linkedin.com/in/shubhangd/" target="_blank"><img src="images/linkedin-footer.png"/></a>
+				<a href="https://medium.com/@shubhang.desai" target="_blank"><img src="images/medium-footer.png"/></a>
 			</div>
       <span>&copy; Shubhang Desai</span>
     </div>
@@ -236,36 +236,114 @@
 		<script>
 			content =
 			{
+				ans:
+				{
+					img: "paper.png",
+					title: "Aribitrary Neural Style",
+					tags: "Machine Learning, PyTorch, Python",
+					desc: "I developed a cutting-edge neural network architecture which could transfer a theoretically arbitrary amount of styles onto a target image. The project served as my final project for Stanford CS 231n, \“Convolutional Neural Networks\”, a class I took Freshman year. The network’s task was to be able to learn the style of many artworks and be able to transfer the style onto any target image. Imagine the functionality of the app \"Prisma\", but instead of being restricted to a few paintings, the user could input any painting they like! As of the start of the project, it first time that the specific architecture had ever been attempted on this task.<br><br>I was able to achieve modest success on the novel architecture. I went through many weeks of tuning hyperparameters for experimentation and was able to get proof that the architecture does work. I wrote about the experiments and success in my final research-grade paper for the class, which can be found in the \”Writings\” section of the website.",
+					github: "https://github.com/ShubhangDesai/arbitrary-neural-style"
+				},
+				comm:
+				{
+					img: "comm.png",
+					title: "The Commuter Chicago",
+					tags: "Android, Mobile Design",
+					desc: "I created an Android app for use of Chicago commuters. I saw the need for a transit app with a sleek and friendly UI and decided to create something to fill the need. I started with designing the app’s UI using prototyping tools such as Justinmind. I then architected the high-level functionality of the app. Finally, I developed the entire architecture and design that I created. I published the app to the Google Play Store; it currently has a 4.9 star rating.",
+					github: "https://github.com/ShubhangDesai/the-commuter-chicago",
+					play: "https://play.google.com/store/apps/details?id=com.recursionlabs.thecommuter&hl=en"
+				},
 				enc:
 				{
-					img: "nn.jpg",
+					img: "enc.png",
 					title: "RNN Encoder-Decoder for Machine Translation",
 					tags: "Machine Learning, PyTorch, Python",
-					desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat, risus et sollicitudin ultricies, ex sapien pulvinar augue, sed egestas nunc est non sem. Integer laoreet eleifend sodales. Nunc lacus purus, aliquam quis sagittis eget, venenatis eu libero. Quisque et semper nisl. Phasellus pharetra volutpat cursus. Nam eu orci et massa vulputate sodales. Aenean mattis tortor ac ligula egestas pharetra. Maecenas ut velit eu quam lobortis tempus quis non orci. In id nulla magna. Fusce quis mi eget lorem imperdiet venenatis. Pellentesque vitae urna vel turpis gravida pharetra non vehicula ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse potenti. Mauris urna felis, egestas id tempor non, mollis eu dui. Proin egestas eleifend mauris sed gravida.",
-					github: "https://github.com/ShubhangDesai/tf-rnn-encoder-decoder"
+					desc: "I developed a Recurrent Neural Network that is architected to translate between languages. The technology is the same that is used by Google in their Translate tool. The architecture is based on the architecture proposed in \”Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation\” by Cho et al. I was recommended to pursue this project by a mentor at the Stanford AI Lab.<br><br>I initially developed the network using TensorFlow, but switched to PyTorch as I felt more familiar with that library. The network is current able to learn on the data, but is still unable to converge to what we call \”learning a language\”. I am current working on tuning the hyperparameters to make the network be able to translate between English and French.",
+					github: "https://github.com/ShubhangDesai/rnn-encoder-decoder"
 				},
-				test: {}
+				dv8:
+				{
+					img: "dv8.jpg",
+					title: "dv8",
+					tags: "Machine Learning, TensorFlow, Flask",
+					desc: "I was a team member on a Hackathon project to create a web platform for those new to stock trading. During CalHacks 2016, I was on a team that used the Nasdaq API to create an investment platform whose main feature was assessing the future risk of a given stock. My contribution was to use a Recurrent Neural Network to predict future stock prices based on years of Nasdaq data. The trained network was able to take 30-days of stock performance data and predict the 31st day with modest accuracy.<br><br>The final product was a web app that integrated my contribution with other Machine Learning insights. Our app was submitted for consideration for the Nasdaq-sponsored prize, and we won. As a result, we were flown out to New York City to be given a tour of the Nasdaq building and studio. We even got a picture of us featured on a Time’s Square billboard, as shown in this site’s header image!",
+					github: "https://github.com/jackcbrown89/dv8-flask",
+					web: "https://devpost.com/software/dv8"
+				},
+				iron:
+				{
+					img: "iron.png",
+					title: "Iron Drive",
+					tags: "Android",
+					desc: "I developed a prototype of an app that shuts down the user’s notifications when they are driving in their car. The app was developed by State Farm’s annual \”Celebrate My Drive\” grant contest. A demo of the app was filmed and entered into the contest, and the entry ended up winning my school a $100,000 grant. The grant money has been put to use to make the driving conditions in the school’s parking lot much safer.",
+					github: "https://github.com/Ferrosilicon/iron-drive"
+				},
+				nibbly:
+				{
+					img: "nibbly.png",
+					title: "Nibbly",
+					tags: "Social Entrepreneurship, AngularJS, Node.js, Postgres, Web Design",
+					desc: "I was a team member on a project to develop a crowdshare platform for volunteer mentors. The project was through the \”CS + Social Good Studio\” class I took during Freshman year. As a part of the class, we teamed up with Streetcode Academy, an East Palo Alto not-for-profit  that aims to teach disadvantaged kids how to code. After needfinding with the organization, we settled on developing a platform that mentors can use to share and find teaching materials. This creates a community focused on teaching, which is crucial for mentors who are just starting out.<br><br>The app was developed with a Node.js backend, an AngularJS frontend, and a Postgres database. I developed a lot of the frontend code and server routes for the app. We presented our final app and our user testing results in a showcase presentation at the end of the academic quarter.",
+					github: "https://github.com/parkmichelle/nibbly"
+				},
+				site:
+				{
+					img: "site.png",
+					title: "shubhangdesai.github.io",
+					tags: "Jekyll, JavaScript, HTML & CSS",
+					desc: "I completely designed and developed this site from the ground up. I opted not to use any CSS framework, as I wanted to try to style the site from scratch as a learning exercise. There is minimal use of JavaScript; most of the animations leverage the functionality introduced in CSS3. I used Jekyll as the blogging platform for my personal blog. I used the Jekyll Now theme as a boilerplate for the blogging functionality, and swapped in my custom theme once it was fully developed.",
+					github: "https://github.com/ShubhangDesai/shubhangdesai.github.io"
+				},
+				sta:
+				{
+					img: "sta.png",
+					title: "Style Transfer App",
+					tags: "Flask, Machine Learning, PyTorch",
+					desc: "I developed a Flask app to demonstrate my Arbitrary Neural Style project. The app is able to take a picture from the user’s webcam and instantly produce four artistic renditions from just a single network, displayed in their browser. I showed this demo during the CS 231n final poster presentation, to many of the attendees’ interest and delight. The site is still being cleaned up before going live; the code base is fully available on GitHub.",
+					github: "https://github.com/ShubhangDesai/style-transfer-app"
+				},
+				concepts:
+				{
+					img: "concepts.png",
+					title: "Concepts iOS",
+					tags: "iOS Development, Machine Learning",
+					desc: "I developed an iOS app that could run a fully-trained neural network directly on the phone as a part of my internship at State Farm R&D. By leveraging an open-source execution engine called DeepLearningKit, the final app was able to classify images belonging to the CIFAR-10 dataset and run the neural network on the iPhone's Metal GPU, in effect meaning that the user could download an entire neural network to their phone.",
+					github: "https://github.com/ShubhangDesai/concepts"
+				}
 			}
 
 			projs = document.getElementsByClassName("proj");
 			for (i = 0; i < projs.length; i++) {
 				projs[i].addEventListener("click", function() {
 					entry = content[this.id];
-					document.getElementById("overlay").style.display = "inline";
-					document.body.style.overflow = "hidden";
 
 					url = "url(\"images/" + entry.img + "\")"
-					document.getElementById("project-image").style.backgroundImage = url;
+					filter = "linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), ";
+					document.getElementById("project-image").style.backgroundImage = filter + url;
+
 					document.getElementById("project-title").innerHTML = entry.title;
+
 					tags = "<em>" + entry.tags + "</em><br><br>";
 					document.getElementById("project-desc").innerHTML = tags + entry.desc;
+
 					document.getElementById("github").href = entry.github;
+
 					if (entry.web) {
 						document.getElementById("web").style.display = "inline";
 						document.getElementById("web").href = entry.web;
 					} else {
 						document.getElementById("web").style.display = "none";
 					}
+
+					if (entry.play) {
+						document.getElementById("play").style.display = "inline";
+						document.getElementById("play").href = entry.play;
+					} else {
+						document.getElementById("play").style.display = "none";
+					}
+
+					document.getElementById("overlay").style.display = "inline";
+					document.body.style.overflow = "hidden";
 				});
 			}
 
