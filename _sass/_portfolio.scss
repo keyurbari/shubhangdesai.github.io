@@ -598,3 +598,41 @@ body {
   width: 66.66%;
   margin-bottom: 100px;
 }
+
+.post-body h2 {
+  margin-bottom: 0px;
+  margin-left: 16.67%;
+  align-self: flex-start;
+}
+
+.post-body p {
+  margin-top: 10px;
+}
+
+.post-body .highlighter-rouge {
+  width: 66.66%;
+}
+
+.post-body ul {
+  width: 66.66%;
+  font-size: 20px;
+  line-height: 1.5em;
+  font-weight: 300;
+}
+
+.post-body a {
+  text-decoration: none;
+  color:#141414;
+  padding: 5px 5px 0px 5px;
+  border-bottom: 1px#141414 solid;
+
+  background: linear-gradient(to right,#141414 50%, #fdfdfd 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition:all 0.3s ease;
+}
+
+.post-body a:hover {
+   background-position:left bottom;
+   color: #fdfdfd;
+}
