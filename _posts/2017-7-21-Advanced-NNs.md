@@ -172,9 +172,9 @@ Finally, the backward pass:
       dshift1 = 1 / (np.sqrt(var + epsilon)) * dout * gamma
 
       dshift2 = np.sum((input - mean) * dout * gamma, axis=0)
-      dshift2 *= (-1 / (var + epsilon))
-      dshift2 *= (0.5 / np.sqrt(var + epsilon))
-      dshift2 *= (2 * (input - mean) / N)
+      dshift2 = (-1 / (var + epsilon)) * dshift2
+      dshift2 = (0.5 / np.sqrt(var + epsilon)) * dshift2
+      dshift2 = (2 * (input - mean) / N) * dshift2
 
       dshift = dshift1 + dshift2
 
@@ -184,7 +184,29 @@ Finally, the backward pass:
 
       return dx
 ```
-The backward pass is certainly a beast, and its derivation is *way* outside of the scope of this post. You can read a very in-depth explanation of the backward pass derivation [here](https://kratzert.github.io/2016/02/12/understanding-the-gradient-flow-through-the-batch-normalization-layer.html).
+The backward pass is certainly a beast, and its derivation is *way* outside of the scope of this post. You can read a very in-depth explanation of the backward pass derivation [here](https://kratzert.github.io/2016/02/12/understanding-the-gradient-flow-through-the-batch-normalization-layer.html). Let's add just a couple of lines in our network which switch the mode of the layer depending on whether it's training or testing. First, let's slightly modify our Network initializer:
+
+```python
+class Network(object):
+    def __init__(self):
+        super(Network, self).__init__()
+        self.diff = (BatchNorm)
+```
+Now for the Sequential train function:
+```python
+        for layer in layers:
+            if isinstance(layer, self.diff):
+                layer.mode = "train"
+              #...
+```
+And finally, the Sequential eval function:
+```python
+        for layer in layers:
+            if isinstance(layer, self.diff):
+                layer.mode = "test"
+            #...
+```
+That's it! Now we can add batch normalization layers to our neural networks.
 
 ## Dropout
 Another special layer we can use to regularize the network is called dropout. In this layer, we randomly kill a fraction of the output neurons. Seriously. We pick random elements of our output tensor and turn them to 0. Why would we want to do this? As it turns out, dropping output neurons randomly means that no single connection between layers is very important in producing a correct prediction, which means that our network will learn to be redundant and can hence generalize to more real-world problems. The best part is that it's pretty easy to implement!
@@ -219,7 +241,7 @@ p is the amount of neurons which we keep. Here is the rest of the implementation
 
         return dx
 ```
-Pretty easy! During training, we create a mask to drop some of the neurons, drop the neurons, and save the mask; during testing we do nothing. In the backward pass, we use the mask to drop the neurons in the incoming gradient that were dropped in the forward pass (recall that we only ever run a backward pass during training, and hence don't need to make a "test-time" backward pass). Simple enough! Now we can add dropout of further regularize and strengthen our network.
+Pretty easy! During training, we create a mask to drop some of the neurons, drop the neurons, and save the mask; during testing we do nothing. In the backward pass, we use the mask to drop the neurons in the incoming gradient that were dropped in the forward pass (recall that we only ever run a backward pass during training, and hence don't need to make a "test-time" backward pass). All that's left to do is add the Dropout class to the Network's diff tuple and we can add dropout to further regularize and strengthen our network.
 
 ## Next Steps
 We learned about some pretty cool advanced features of neural networks. It may be useful to read some papers on these topics:
