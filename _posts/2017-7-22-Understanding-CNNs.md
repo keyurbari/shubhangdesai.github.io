@@ -3,7 +3,7 @@ layout: post
 title: Understanding Convolutional Neural Networks
 permalink: /blog/Understanding-CNNs
 ---
-In my [last post](/blog/Modular-NN-Mini-Framework), we built a modular neural network micro-framework that will help us learn more about NNs. Now, we put that framework to use to understand Convolutional Neural Networks (CNNs). CNNs are neural networks which can are mostly employed on vision tasks--that is, problems that have to do with pictures. The benefit of using a CNN over a fully-connected network on images is that CNNs preserve spatial relationships and can gain insights into the visual structure of the input picture.
+In my [last post](/blog/Advanced-NNs), we learned about some advanced neural network topics and built them into our NN micro-framework. Now, we put that advanced framework to use to understand Convolutional Neural Networks (CNNs). CNNs are neural networks which can are mostly employed on vision tasks--that is, problems that have to do with pictures. The benefit of using a CNN over a fully-connected network on images is that CNNs preserve spatial relationships and can gain insights into the visual structure of the input picture.
 
 In this post, we will explore the math and intuition behind CNNs. We will also add to our micro-framework a Convolution layer and use it to create a simple, 3-hidden layer CNN on an image classification task.
 
