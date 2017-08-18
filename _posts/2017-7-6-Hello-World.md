@@ -11,7 +11,7 @@ I'll be writing on this blog periodically, but more frequently these next few mo
 * [Modular neural network framework](Modular-NN-Mini-Framework)
 * [Simple CNN using modular framework](Understanding-CNNs)
 * [Simple RNN using modular framework](Understanding-RNNs)
-* [Building a feedforward network for artistic style transfer](Neural-Style)
+* [Building a feedforward network for artistic style transfer](Neural-Style.html)
 * Flask DNN demo boilerplate
 * Deep networks for black-and-white image colorization
 * PlatoRNN: an RNN which can philosophize
