@@ -227,14 +227,14 @@ We now need to add an Image Transformation Network to our now multi-stage networ
                                                nn.ConvTranspose2d(64, 32, 3, stride=2, padding=1, output_padding=1),
                                                nn.Conv2d(32, 3, 9, stride=1, padding=4),
                                               )
-      self.gram = GramMatrix()
-      self.loss = nn.MSELoss()
-      self.optimizer = optim.Adam(self.transform_network.parameters(), lr=1e-3)
+    self.gram = GramMatrix()
+    self.loss = nn.MSELoss()
+    self.optimizer = optim.Adam(self.transform_network.parameters(), lr=1e-3)
 
-      self.use_cuda = torch.cuda.is_available()
-      if self.use_cuda:
-          self.loss_network.cuda()
-          self.gram.cuda()                    
+    self.use_cuda = torch.cuda.is_available()
+    if self.use_cuda:
+    self.loss_network.cuda()
+        self.gram.cuda()                    
 ```
 Also, since we now want our training regime to accept a content image batch as training examples, we can remove the content image as an input to the initializer. Our training regime accepts a content image batch, transforms it into pastiche images, computes losses as done above, and calls backward on the final loss to update the ITN parameters. Here's all that in code:
 
