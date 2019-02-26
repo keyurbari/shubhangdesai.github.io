@@ -1,0 +1,318 @@
+<html>
+	<head>
+		<title>Satyajeet Nimbalkar</title>
+
+		<link rel="stylesheet" type="text/css" href="/style.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700" rel="stylesheet">
+	</head>
+	<div id="overlay">
+		<img id="x" src="images/x.png"/>
+		<div class="overlay-content">
+				<div id="project-image">
+					<h1 id="project-title"></h1>
+				</div>
+				<p id="project-desc">
+				</p>
+				<div class="row">
+					<a href="http://google.com" id="play" target="_blank"><img src="images/play.png"/></a>
+					<a href="http://google.com" id="github" target="_blank"><img src="images/github.png"/></a>
+					<a href="http://google.com" id="web" target="_blank"><img src="images/web.png"/></a>
+				</div>
+		</div>
+	</div>
+	<body>
+
+		<div class="main section">
+			<div class="main-pic"></div>
+			<div class="slant"></div>
+			<div class="main-text">
+				HI, I'M <br> <span class="name">SATYAJEET</span>
+			</div>
+		</div>
+		<div class="section about">
+			<h1>ABOUT</h1>
+			<p>
+				I'm a learner from UPG(Usha Pravin Gandhi)studying 
+				 BA in film making. If you'all want to know more 
+				    about this course, you can download it.
+				Well I can often be found working on Scripts,
+				   shoot pictures and Films in my free time.
+			</p>
+			<a href="/files/am.pdf" target="_blank" class="button" download>
+				Download Course
+			</a>
+		</div>
+
+		<div class="black section">
+			<h1>PROJECTS</h1>
+			<div class="projects">
+
+			<div class="proj" id="ans">
+				<div style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/11.jpg');"></div>
+				<span>Sketchy Torso</span>
+			</div>
+
+			<div class="proj" id="comm">
+				<div style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/12.jpg');"></div>
+				<span>Acing Reflections</span>
+			</div>
+
+			<div class="proj" id="enc">
+				<div style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/13.png');"></div>
+				<span>Strokes</span>
+			</div>
+
+			<div class="proj" id="dv8">
+				<div style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/14.jpg');"></div>
+				<span>Psyka</span>
+			</div>
+
+
+			</div>
+		</div>
+
+		
+
+		<div class="black section">
+			<h1></h1>
+			<a class="pub-link" href="blog.html" target="_blank">
+				<div class="pub">
+					
+
+
+							<script>
+									function includeHTML() {
+									  var z, i, elmnt, file, xhttp;
+									  /*loop through a collection of all HTML elements:*/
+									  z = document.getElementsByTagName("*");
+									  for (i = 0; i < z.length; i++) {
+									    elmnt = z[i];
+									    /*search for elements with a certain atrribute:*/
+									    file = elmnt.getAttribute("w3-include-html");
+									    if (file) {
+									      /*make an HTTP request using the attribute value as the file name:*/
+									      xhttp = new XMLHttpRequest();
+									      xhttp.onreadystatechange = function() {
+										if (this.readyState == 4) {
+										  if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+										  if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+										  /*remove the attribute, and call this function once more:*/
+										  elmnt.removeAttribute("w3-include-html");
+										  includeHTML();
+										}
+									      }      
+									      xhttp.open("GET", file, true);
+									      xhttp.send();
+									      /*exit the function:*/
+									      return;
+									    }
+									  }
+									};
+									</script>
+									<body>
+
+									<div w3-include-html="blog.html"></div>
+
+									<script>
+									includeHTML();
+									</script>
+
+									</body>
+
+		<body>
+					
+					</div>
+				</div>
+			</a>
+
+			<a class="pub-link" href="table.html" target="_blank">
+				<div class="pub">
+					<div class="image-container">
+				
+								<script>
+								function includeHTML() {
+								  var z, i, elmnt, file, xhttp;
+								  /*loop through a collection of all HTML elements:*/
+								  z = document.getElementsByTagName("*");
+								  for (i = 0; i < z.length; i++) {
+								    elmnt = z[i];
+								    /*search for elements with a certain atrribute:*/
+								    file = elmnt.getAttribute("w3-include-html");
+								    if (file) {
+								      /*make an HTTP request using the attribute value as the file name:*/
+								      xhttp = new XMLHttpRequest();
+								      xhttp.onreadystatechange = function() {
+									if (this.readyState == 4) {
+									  if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+									  if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+									  /*remove the attribute, and call this function once more:*/
+									  elmnt.removeAttribute("w3-include-html");
+									  includeHTML();
+									}
+								      }      
+								      xhttp.open("GET", file, true);
+								      xhttp.send();
+								      /*exit the function:*/
+								      return;
+								    }
+								  }
+								};
+								</script>
+								<body> 
+							
+
+								<script>
+								includeHTML();
+								</script>
+
+								</body>
+					</div>
+					<div class="content">
+							
+					</div>
+				</div>
+			</a>
+
+			</div>
+							<head>
+						<style>
+						table, th, td {
+						  border: 1px solid black;
+						  padding: 5px;
+						}
+						table {
+						  border-spacing: 15px;
+						}
+						</style>
+						</head>
+						<body>
+
+						        <h2>CERTIFICATIONS</h2>
+						             
+
+						<table style="width:100%">
+						  <tr>
+						    <th>EVENT</th>
+						    <th>PLACE</th> 
+						    <th>DATE</th>
+						  </tr>
+						  <tr>
+						    <td>CSS J1O</td>
+						    <td>Winner</td>
+						    <td>2017</td>
+						  </tr>
+						  <tr>
+						    <td>Mood Indigo-Sketching</td>
+						    <td>Winner</td>
+						    <td>2018</td>
+						  </tr>
+						  <tr>
+						    <td>Vividh</td>
+						    <td>Runner up</td>
+						    <td>2019</td>
+						  </tr>
+						</table>
+
+						            <p> </p>
+
+						            </body>
+						             <body>
+<div id="youtube">
+						<iframe width="1200" height="800" src="https://www.youtube.com/embed/Gpk6bKwfwgM">
+						</iframe>
+</div>
+						             </body>
+		<div class="section">
+			<h1>REGISTRATION FORM</h1>
+
+		{{  content  }}
+
+		<div class="blog-button">
+		<a href="/blog" class="button">
+		  HERE >	
+		         </a>
+			</div>
+		</div>
+
+		<div class="black footer">
+			<div class="links">
+				<a href="https://www.instagram.com/keyur.bari/" target="_blank"><img src="images/medium-footer.png"/></a>
+				<a href="mailto:keyurbari6@gmail.com" target="_blank"><img src="images/email-footer.png"/></a>
+			</div>
+      <span>&copy; Keyur Bari</span>
+    </div>
+
+		<script>
+			content =
+			{
+				ans:
+				{
+					img: "11.jpg",
+					title: "SATY 1",
+					
+				},
+				comm:
+				{
+					img: "12.jpg",
+					title: "SATY 2",
+					
+				},
+				enc:
+				{
+					img: "",
+					title: "SATY 3",
+					
+				},
+				dv8:
+				{
+					img: "",
+					title: "SATY 4",
+					
+				},
+			}
+
+			projs = document.getElementsByClassName("proj");
+			for (i = 0; i < projs.length; i++) {
+				projs[i].addEventListener("click", function() {
+					entry = content[this.id];
+
+					url = "url(\"images/" + entry.img + "\")"
+					filter = "linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), ";
+					document.getElementById("project-image").style.backgroundImage = filter + url;
+
+					document.getElementById("project-title").innerHTML = entry.title;
+
+					tags = "<em>" + entry.tags + "</em><br><br>";
+					document.getElementById("project-desc").innerHTML = tags + entry.desc;
+
+					document.getElementById("github").href = entry.github;
+
+					if (entry.web) {
+						document.getElementById("web").style.display = "inline";
+						document.getElementById("web").href = entry.web;
+					} else {
+						document.getElementById("web").style.display = "none";
+					}
+
+					if (entry.play) {
+						document.getElementById("play").style.display = "inline";
+						document.getElementById("play").href = entry.play;
+					} else {
+						document.getElementById("play").style.display = "none";
+					}
+
+					document.getElementById("overlay").style.display = "inline";
+					document.body.style.overflow = "hidden";
+				});
+			}
+
+			document.getElementById("x").addEventListener("click", function() {
+				console.log("test")
+				document.getElementById("overlay").style.display = "none";
+				document.body.style.overflow = "auto";
+			});
+		</script>
+	</body>
+</html>
